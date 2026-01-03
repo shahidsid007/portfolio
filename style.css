@@ -90,38 +90,73 @@ body.light .gradient-circle {
   75% { transform: translateY(-50px) translateX(-100px); }
 }
 
-/* ===== THEME SWITCH ===== */
+/* ===== THEME SWITCH - FIXED ===== */
 .theme-switch {
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1001;
   cursor: pointer;
-  font-size: 24px;
+  background: rgba(124, 58, 237, 0.15);
+  padding: 10px;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(124, 58, 237, 0.3);
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(124, 58, 237, 0.1);
-  padding: 12px 18px;
-  border-radius: 50px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(124, 58, 237, 0.2);
-  transition: all 0.3s ease;
+  justify-content: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .theme-switch:hover {
-  transform: scale(1.05);
-  background: rgba(124, 58, 237, 0.2);
+  transform: scale(1.1);
+  background: rgba(124, 58, 237, 0.25);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);
 }
 
 body.light .theme-switch {
-  background: rgba(0, 0, 0, 0.05);
-  border-color: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 193, 7, 0.15);
+  border-color: rgba(255, 193, 7, 0.3);
 }
 
 body.light .theme-switch:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 193, 7, 0.25);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.4);
+}
+
+.theme-icon {
+  font-size: 24px;
+  position: absolute;
+  transition: all 0.4s ease;
+}
+
+/* Show sun in dark mode, hide moon */
+body.dark .theme-icon.sun {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+  visibility: visible;
+}
+
+body.dark .theme-icon.moon {
+  opacity: 0;
+  transform: rotate(180deg) scale(0);
+  visibility: hidden;
+}
+
+/* Show moon in light mode, hide sun */
+body.light .theme-icon.sun {
+  opacity: 0;
+  transform: rotate(-180deg) scale(0);
+  visibility: hidden;
+}
+
+body.light .theme-icon.moon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+  visibility: visible;
 }
 
 /* ===== NAVBAR ===== */
@@ -1151,8 +1186,14 @@ body.light .bottom-nav .nav-item {
   }
 
   .theme-switch {
-    right: 20px;
-    top: 20px;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .theme-icon {
+    font-size: 20px;
   }
 
   .hero {
