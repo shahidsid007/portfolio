@@ -1,53 +1,30 @@
 // GSAP Plugins
 gsap.registerPlugin(ScrollTrigger);
 
-// ===== THEME SWITCHER =====
+// ===== THEME SWITCHER - COMPLETELY FIXED =====
 const body = document.body;
 const themeSwitch = document.querySelector(".theme-switch");
-const sunIcon = document.querySelector(".theme-switch .sun");
-const moonIcon = document.querySelector(".theme-switch .moon");
+const sunIcon = document.querySelector(".theme-icon.sun");
+const moonIcon = document.querySelector(".theme-icon.moon");
 
-// Prevent default link behavior
-themeSwitch.addEventListener('click', (e) => {
+// Load saved theme on page load OR set default
+const savedTheme = localStorage.getItem('theme') || 'dark';
+body.classList.add(savedTheme);
+
+// Theme toggle click handler
+themeSwitch.addEventListener("click", function(e) {
   e.preventDefault();
   e.stopPropagation();
-});
-
-// Initialize theme icons
-function updateIcons() {
+  
   if (body.classList.contains("dark")) {
-    sunIcon.style.display = "inline";
-    moonIcon.style.display = "none";
+    body.classList.remove("dark");
+    body.classList.add("light");
+    localStorage.setItem('theme', 'light');
   } else {
-    sunIcon.style.display = "none";
-    moonIcon.style.display = "inline";
+    body.classList.remove("light");
+    body.classList.add("dark");
+    localStorage.setItem('theme', 'dark');
   }
-}
-
-// Load saved theme on page load
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-  body.classList.remove('dark', 'light');
-  body.classList.add(savedTheme);
-} else {
-  body.classList.add('dark'); // Default theme
-}
-updateIcons();
-
-// Theme toggle
-themeSwitch.addEventListener("click", (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  
-  body.classList.toggle("dark");
-  body.classList.toggle("light");
-  updateIcons();
-  
-  // Save preference
-  const currentTheme = body.classList.contains('dark') ? 'dark' : 'light';
-  localStorage.setItem('theme', currentTheme);
-  
-  console.log('Theme switched to:', currentTheme);
 });
 
 // ===== HERO ANIMATIONS =====
@@ -119,7 +96,6 @@ document.addEventListener("mousemove", (e) => {
 });
 
 // ===== SECTION ANIMATIONS =====
-// About Section
 gsap.from(".about-text", {
   scrollTrigger: {
     trigger: "#about-section",
@@ -158,7 +134,6 @@ gsap.from(".highlight-item", {
   ease: "power3.out"
 });
 
-// Work Section
 gsap.from(".card", {
   scrollTrigger: {
     trigger: "#work",
@@ -172,7 +147,6 @@ gsap.from(".card", {
   ease: "power3.out"
 });
 
-// Tech Stack Section with Skill Bars
 gsap.utils.toArray(".tech-card").forEach((card, index) => {
   gsap.from(card, {
     scrollTrigger: {
@@ -187,7 +161,6 @@ gsap.utils.toArray(".tech-card").forEach((card, index) => {
     ease: "power3.out"
   });
 
-  // Animate skill bar
   const fill = card.querySelector(".skill-fill");
   if (fill) {
     gsap.to(fill, {
@@ -203,7 +176,6 @@ gsap.utils.toArray(".tech-card").forEach((card, index) => {
   }
 });
 
-// Contact Section
 gsap.from(".contact-item", {
   scrollTrigger: {
     trigger: ".contact-info",
@@ -250,16 +222,11 @@ scrollBtn.addEventListener("click", () => {
 // ===== SMOOTH SCROLL FOR NAVIGATION =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
-    // Don't prevent default for theme switch
-    if (this.classList.contains('theme-switch')) {
-      return;
-    }
-    
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
     
     if (target) {
-      const offset = 80; // Navbar height
+      const offset = 80;
       const targetPosition = target.offsetTop - offset;
       
       window.scrollTo({
@@ -279,8 +246,6 @@ window.addEventListener("scroll", () => {
   
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    
     if (window.scrollY >= sectionTop - 200) {
       current = section.getAttribute("id");
     }
@@ -326,7 +291,6 @@ function typeEffect() {
   setTimeout(typeEffect, typeSpeed);
 }
 
-// Start typing effect
 setTimeout(typeEffect, 1000);
 
 // ===== FADE IN ON SCROLL =====
@@ -344,7 +308,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Observe all sections
 document.querySelectorAll(".section").forEach((section) => {
   section.style.opacity = "0";
   section.style.transform = "translateY(30px)";
