@@ -32,10 +32,9 @@
   <meta name="twitter:image" content="https://shahidgul.dev/img/twitter-card.jpg">
   <meta name="twitter:creator" content="@Imshahidsid">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <!-- Favicon - UPDATED -->
+  <link rel="icon" href="/alogo.png" type="image/png">
+  <link rel="apple-touch-icon" href="/alogo.png">
 
   <!-- Schema.org JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -91,12 +90,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP - Load before closing body tag for better performance -->
 </head>
 
 <body class="dark">
@@ -108,10 +105,10 @@
     <div class="gradient-circle circle-3"></div>
   </div>
 
-  <!-- THEME SWITCH - FIXED -->
-  <button class="theme-switch" aria-label="Toggle dark/light theme" type="button">
-    <span class="theme-icon sun">☀️</span>
-    <span class="theme-icon moon">🌙</span>
+  <!-- THEME SWITCH - FIXED WITH HIGHER Z-INDEX -->
+  <button class="theme-switch" id="themeToggle" aria-label="Toggle dark/light theme" type="button">
+    <span class="theme-icon sun" id="sunIcon">☀️</span>
+    <span class="theme-icon moon" id="moonIcon">🌙</span>
   </button>
 
   <!-- NAVBAR -->
@@ -580,6 +577,11 @@
     <span>↑</span>
   </button>
 
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom Script -->
   <script src="script.js"></script>
 </body>
 
