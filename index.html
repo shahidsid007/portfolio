@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +8,8 @@
   <!-- Primary Meta Tags -->
   <title>Shahid Gul | Frontend Developer & Web Designer Portfolio</title>
   <meta name="title" content="Shahid Gul | Frontend Developer & Web Designer Portfolio">
-  <meta name="description" content="Shahid Gul - Frontend Engineer specializing in React, JavaScript, HTML/CSS. MCA Graduate from Srinagar creating high-performance animated web interfaces.">
-  <meta name="keywords" content="Shahid Gul, frontend developer, web developer portfolio, React developer, JavaScript developer">
+  <meta name="description" content="Shahid Gul - Frontend Engineer specializing in React, JavaScript, HTML/CSS. MCA Graduate from Srinagar creating high-performance animated web interfaces. View portfolio projects and contact for web development services.">
+  <meta name="keywords" content="Shahid Gul, frontend developer, web developer portfolio, React developer, JavaScript developer, Srinagar developer, MCA graduate, UI developer, web designer Kashmir, frontend engineer">
   <meta name="author" content="Shahid Gul">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://shahidgul.dev/">
@@ -19,17 +18,22 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shahidgul.dev/">
   <meta property="og:title" content="Shahid Gul | Frontend Developer & Web Designer Portfolio">
-  <meta property="og:description" content="Frontend Engineer specializing in React, JavaScript, and animated web interfaces.">
+  <meta property="og:description" content="Frontend Engineer specializing in React, JavaScript, and animated web interfaces. View my portfolio projects and get in touch for web development services.">
   <meta property="og:image" content="https://shahidgul.dev/img/og-image.jpg">
+  <meta property="og:site_name" content="Shahid Gul Portfolio">
+  <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://shahidgul.dev/">
   <meta name="twitter:title" content="Shahid Gul | Frontend Developer Portfolio">
+  <meta name="twitter:description" content="Frontend Engineer specializing in React, JavaScript, and animated web interfaces. MCA Graduate from Srinagar, India.">
+  <meta name="twitter:image" content="https://shahidgul.dev/img/twitter-card.jpg">
   <meta name="twitter:creator" content="@Imshahidsid">
 
   <!-- Favicon -->
   <link rel="icon" href="/img/alogo.png" type="image/png">
-  <link rel="apple-touch-icon" href="/alogo.png">
+  <link rel="apple-touch-icon" href="/img/alogo.png">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -38,372 +42,417 @@
     "@type": "Person",
     "name": "Shahid Gul",
     "url": "https://shahidgul.dev",
+    "image": "https://shahidgul.dev/img/profile.jpg",
     "jobTitle": "Frontend Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "description": "Frontend Engineer specializing in React, JavaScript, HTML/CSS and animated web interfaces",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Srinagar",
+      "addressRegion": "Jammu and Kashmir",
       "addressCountry": "India"
     },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "University (MCA Graduate)"
+    },
+    "knowsAbout": [
+      "JavaScript", "React", "HTML", "CSS", "Tailwind CSS", "Bootstrap", 
+      "SASS", "Git", "GitHub", "Frontend Development", "Web Design", "UI/UX"
+    ],
     "sameAs": [
       "https://github.com/Shahidsid007",
-      "https://linkedin.com/in/shahid-gul-42a1691aa"
+      "https://linkedin.com/in/shahid-gul-42a1691aa",
+      "https://facebook.com/ishahid.1998",
+      "https://instagram.com/i.mshahid___sid",
+      "https://x.com/Imshahidsid",
+      "https://stackoverflow.com/users/14758146"
     ]
   }
   </script>
 
-  <!-- Preload Critical Assets -->
+  <!-- Preconnect to external resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Fonts with display=swap for better performance -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="dark" data-loading="true">
+<body class="dark loading">
 
-  <!-- PRELOADER -->
-  <div class="preloader" id="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-logo">
-        <span class="preloader-icon">⚡</span>
-        <span class="preloader-text">Shahid.dev</span>
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader">
+    <div class="preloader-content">
+      <div class="logo-loader">
+        <span class="logo-icon-loader">⚡</span>
+        <span class="logo-text-loader">Shahid.dev</span>
       </div>
-      <div class="preloader-bar">
-        <div class="preloader-progress"></div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
       </div>
-      <span class="preloader-percentage">0%</span>
+      <p class="loader-text">Loading Experience...</p>
     </div>
   </div>
 
-  <!-- CUSTOM CURSOR -->
-  <div class="cursor" id="cursor">
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-  </div>
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" aria-hidden="true"></div>
 
-  <!-- ANIMATED BACKGROUND -->
+  <!-- ===== ANIMATED BACKGROUND ===== -->
   <div class="animated-bg" aria-hidden="true">
-    <div class="gradient-orb orb-1"></div>
-    <div class="gradient-orb orb-2"></div>
-    <div class="gradient-orb orb-3"></div>
-    <div class="noise-overlay"></div>
-    <div class="grid-overlay"></div>
+    <div class="gradient-circle circle-1"></div>
+    <div class="gradient-circle circle-2"></div>
+    <div class="gradient-circle circle-3"></div>
+    <canvas id="particleCanvas"></canvas>
   </div>
 
-  <!-- THEME SWITCH -->
-  <button class="theme-switch" id="themeToggle" aria-label="Toggle theme" type="button">
+  <!-- ===== THEME TOGGLE ===== -->
+  <button class="theme-switch" id="themeToggle" aria-label="Toggle dark/light theme" type="button">
     <div class="theme-switch-track">
-      <span class="theme-icon sun">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="5"></circle>
-          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+      <span class="theme-icon sun-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <circle cx="10" cy="10" r="4" fill="currentColor"/>
+          <path d="M10 0v3M10 17v3M20 10h-3M3 10H0M16.36 3.64l-2.12 2.12M5.76 14.24l-2.12 2.12M16.36 16.36l-2.12-2.12M5.76 5.76L3.64 3.64" stroke="currentColor" stroke-width="2"/>
         </svg>
       </span>
-      <span class="theme-icon moon">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      <span class="theme-icon moon-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M17 10.5C16 14.5 12.5 17 8.5 17C5 17 2 14.5 1 10.5C0.5 8.5 0.5 6 2 4C3 3 4.5 2.5 6 2.5C6 5.5 7.5 8 10 9C11 9.5 12.5 10 14 10C15 10 16 9.5 17 10.5Z" fill="currentColor"/>
         </svg>
       </span>
-      <div class="theme-switch-thumb"></div>
     </div>
   </button>
 
-  <!-- NAVBAR -->
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar" id="navbar" role="banner">
-    <a href="#home" class="logo" aria-label="Shahid.dev - Home">
-      <span class="logo-icon">⚡</span>
-      <span class="logo-text">Shahid<span class="logo-accent">.dev</span></span>
-    </a>
-    
-    <nav class="nav-menu" role="navigation" aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
-        <li><a href="#about" class="nav-link" data-text="About">About</a></li>
-        <li><a href="#work" class="nav-link" data-text="Work">Work</a></li>
-        <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
-        <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
-      </ul>
-      <div class="nav-indicator"></div>
-    </nav>
+    <div class="navbar-container">
+      <a href="#home" class="logo" aria-label="Shahid.dev Home">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Shahid<span class="dot">.</span>dev</span>
+      </a>
+      
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav-link active" data-section="home">
+          <span class="nav-link-text">Home</span>
+          <span class="nav-link-indicator"></span>
+        </a>
+        <a href="#about" class="nav-link" data-section="about">
+          <span class="nav-link-text">About</span>
+          <span class="nav-link-indicator"></span>
+        </a>
+        <a href="#work" class="nav-link" data-section="work">
+          <span class="nav-link-text">Work</span>
+          <span class="nav-link-indicator"></span>
+        </a>
+        <a href="#skills" class="nav-link" data-section="skills">
+          <span class="nav-link-text">Skills</span>
+          <span class="nav-link-indicator"></span>
+        </a>
+        <a href="#contact" class="nav-link" data-section="contact">
+          <span class="nav-link-text">Contact</span>
+          <span class="nav-link-indicator"></span>
+        </a>
+      </nav>
 
-    <a href="#contact" class="nav-cta magnetic">
-      <span>Let's Talk</span>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M7 17L17 7M17 7H7M17 7v10"/>
-      </svg>
-    </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-intro reveal-up">
-        <span class="badge">
-          <span class="badge-dot"></span>
-          Available for Work
-        </span>
-      </div>
-      
-      <h1 class="hero-title">
-        <span class="reveal-up" style="--delay: 0.1s">Hi, I'm</span>
-        <span class="hero-name reveal-up" style="--delay: 0.2s">
-          <span class="gradient-text" data-text="Shahid Gul">Shahid Gul</span>
-        </span>
-        <span class="hero-role reveal-up" style="--delay: 0.3s">
-          <span class="typing-wrapper">
-            <span class="typing-text" id="typingText">Frontend Developer</span>
-            <span class="typing-cursor">|</span>
-          </span>
-        </span>
-      </h1>
-      
-      <p class="hero-description reveal-up" style="--delay: 0.4s">
-        I craft <em>immersive digital experiences</em> with clean code and stunning animations. 
-        Specializing in React, JavaScript, and modern web technologies to bring your ideas to life.
-      </p>
-      
-      <div class="hero-actions reveal-up" style="--delay: 0.5s">
-        <a href="#contact" class="btn btn-primary magnetic">
-          <span class="btn-text">Start a Project</span>
-          <span class="btn-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </span>
-        </a>
-        <a href="#work" class="btn btn-outline magnetic">
-          <span class="btn-text">View Portfolio</span>
-        </a>
-      </div>
-      
-      <div class="hero-stats reveal-up" style="--delay: 0.6s">
-        <div class="stat-item" data-count="3">
-          <span class="stat-number">0+</span>
-          <span class="stat-label">Years Exp</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item" data-count="20">
-          <span class="stat-number">0+</span>
-          <span class="stat-label">Projects</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item" data-count="15">
-          <span class="stat-number">0+</span>
-          <span class="stat-label">Clients</span>
-        </div>
-      </div>
-    </div>
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <a href="#home" class="mobile-nav-link">
+        <span class="mobile-nav-icon">🏠</span>
+        <span class="mobile-nav-text">Home</span>
+      </a>
+      <a href="#about" class="mobile-nav-link">
+        <span class="mobile-nav-icon">👤</span>
+        <span class="mobile-nav-text">About</span>
+      </a>
+      <a href="#work" class="mobile-nav-link">
+        <span class="mobile-nav-icon">💼</span>
+        <span class="mobile-nav-text">Work</span>
+      </a>
+      <a href="#skills" class="mobile-nav-link">
+        <span class="mobile-nav-icon">⚡</span>
+        <span class="mobile-nav-text">Skills</span>
+      </a>
+      <a href="#contact" class="mobile-nav-link">
+        <span class="mobile-nav-icon">✉️</span>
+        <span class="mobile-nav-text">Contact</span>
+      </a>
+    </nav>
+  </div>
 
-    <div class="hero-visual">
-      <div class="code-window reveal-right">
-        <div class="code-header">
-          <div class="code-dots">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <span class="code-title">developer.js</span>
-          <div class="code-actions">
-            <button class="code-btn" aria-label="Copy code">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-            </button>
-          </div>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" data-aos="fade-down">
+          <span class="badge-icon">👋</span>
+          <span class="badge-text">Welcome to my portfolio</span>
         </div>
-        <div class="code-body">
-          <pre class="code-content"><code><span class="line"><span class="line-number">1</span><span class="keyword">const</span> <span class="variable">developer</span> = {</span>
-<span class="line"><span class="line-number">2</span>  <span class="property">name</span>: <span class="string">"Shahid Gul"</span>,</span>
-<span class="line"><span class="line-number">3</span>  <span class="property">role</span>: <span class="string">"Frontend Engineer"</span>,</span>
-<span class="line"><span class="line-number">4</span>  <span class="property">location</span>: <span class="string">"Srinagar, India"</span>,</span>
-<span class="line"><span class="line-number">5</span></span>
-<span class="line"><span class="line-number">6</span>  <span class="property">skills</span>: [</span>
-<span class="line"><span class="line-number">7</span>    <span class="string">"React"</span>, <span class="string">"JavaScript"</span>,</span>
-<span class="line"><span class="line-number">8</span>    <span class="string">"TypeScript"</span>, <span class="string">"GSAP"</span></span>
-<span class="line"><span class="line-number">9</span>  ],</span>
-<span class="line"><span class="line-number">10</span></span>
-<span class="line"><span class="line-number">11</span>  <span class="function">createMagic</span>() {</span>
-<span class="line"><span class="line-number">12</span>    <span class="keyword">return</span> <span class="string">"✨ Beautiful UIs"</span>;</span>
-<span class="line"><span class="line-number">13</span>  }</span>
-<span class="line"><span class="line-number">14</span>};</span></code></pre>
+        
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+          Hi, I'm <span class="gradient-text">Shahid Gul</span>
+        </h1>
+        
+        <div class="hero-typing" data-aos="fade-up" data-aos-delay="200">
+          <span class="typing-prefix">I'm a </span>
+          <span class="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        
+        <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+          I craft immersive web experiences with stunning animations and clean architecture. 
+          Specializing in <strong>React</strong>, <strong>JavaScript</strong>, and modern frontend development.
+        </p>
+        
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+          <a href="#contact" class="btn btn-primary">
+            <span class="btn-text">Get In Touch</span>
+            <span class="btn-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10h12m-6-6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+          <a href="#work" class="btn btn-secondary">
+            <span class="btn-text">View Work</span>
+            <span class="btn-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 4v12m6-6H4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+        
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+          <div class="stat-item">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="20">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
         </div>
       </div>
-      
-      <!-- Floating Elements -->
-      <div class="floating-elements">
-        <div class="floating-card float-1">
-          <span class="floating-icon">⚛️</span>
-          <span class="floating-label">React</span>
+
+      <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
+        <div class="code-window">
+          <div class="code-window-header">
+            <div class="code-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="code-title">developer.js</div>
+            <div class="code-actions"></div>
+          </div>
+          <div class="code-body">
+            <pre class="code-content"><code><span class="line-number">1</span>  <span class="keyword">const</span> <span class="variable">developer</span> = {
+<span class="line-number">2</span>    <span class="property">name</span>: <span class="string">"Shahid Gul"</span>,
+<span class="line-number">3</span>    <span class="property">role</span>: <span class="string">"Frontend Engineer"</span>,
+<span class="line-number">4</span>    <span class="property">location</span>: <span class="string">"Srinagar, India"</span>,
+<span class="line-number">5</span>    
+<span class="line-number">6</span>    <span class="property">skills</span>: [
+<span class="line-number">7</span>      <span class="string">"React"</span>, <span class="string">"JavaScript"</span>,
+<span class="line-number">8</span>      <span class="string">"HTML/CSS"</span>, <span class="string">"GSAP"</span>
+<span class="line-number">9</span>    ],
+<span class="line-number">10</span>   
+<span class="line-number">11</span>   <span class="function">createMagic</span>: () => {
+<span class="line-number">12</span>     <span class="keyword">return</span> <span class="string">"Beautiful Interfaces ✨"</span>;
+<span class="line-number">13</span>   }
+<span class="line-number">14</span> };</code></pre>
+          </div>
         </div>
-        <div class="floating-card float-2">
-          <span class="floating-icon">🎨</span>
-          <span class="floating-label">Design</span>
-        </div>
-        <div class="floating-card float-3">
-          <span class="floating-icon">⚡</span>
-          <span class="floating-label">Fast</span>
+        
+        <div class="floating-elements" aria-hidden="true">
+          <div class="floating-card card-1">
+            <div class="card-icon">⚛️</div>
+            <div class="card-text">React</div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="card-icon">📱</div>
+            <div class="card-text">Responsive</div>
+          </div>
+          <div class="floating-card card-3">
+            <div class="card-icon">🎨</div>
+            <div class="card-text">Design</div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Scroll Indicator -->
-    <div class="scroll-indicator reveal-up" style="--delay: 0.8s">
-      <div class="mouse">
-        <div class="wheel"></div>
+    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+      <div class="scroll-icon">
+        <div class="scroll-wheel"></div>
       </div>
-      <span>Scroll to explore</span>
+      <span class="scroll-text">Scroll Down</span>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section class="section about" id="about">
-    <div class="container">
-      <header class="section-header">
-        <span class="section-label reveal-up">About Me</span>
-        <h2 class="section-title reveal-up" style="--delay: 0.1s">
-          Crafting Digital<br>
-          <span class="gradient-text">Experiences</span>
-        </h2>
-        <p class="section-description reveal-up" style="--delay: 0.2s">
-          Passionate about turning complex problems into simple, beautiful solutions
-        </p>
-      </header>
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about-section" id="about">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <span class="badge-dot"></span>
+          Get To Know Me
+        </span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Frontend Developer from Srinagar, India</p>
+      </div>
 
-      <div class="about-grid">
-        <div class="about-content">
-          <div class="about-text reveal-left">
-            <p class="lead">
-              I'm <strong>Shahid Gul</strong> — a passionate frontend developer from 
-              <span class="highlight">Srinagar, Kashmir</span>, specializing in building 
-              high-performance, animated, and visually stunning web interfaces.
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <div class="text-block">
+            <p class="lead-text">
+              I'm <strong>Shahid Gul</strong> — a passionate frontend developer and web designer 
+              from Srinagar, Jammu and Kashmir, specializing in building <span class="highlight">high-performance</span>, 
+              <span class="highlight">animated</span>, and visually stunning web interfaces.
             </p>
             <p>
-              With a Master's degree in Computer Applications (MCA), I combine technical 
-              expertise with creative design thinking to deliver exceptional digital experiences. 
-              My approach focuses on clean code, smooth animations, and intuitive user interfaces.
+              With a <strong>Master's degree in Computer Applications (MCA)</strong>, I combine technical 
+              expertise with creative design to deliver exceptional digital experiences. My focus is on 
+              creating responsive, accessible, and user-friendly applications using modern technologies 
+              like React, JavaScript, and cutting-edge CSS frameworks.
+            </p>
+            <p>
+              I believe in writing clean, maintainable code and staying updated with the latest web 
+              technologies. Every project is an opportunity to push boundaries and create something 
+              meaningful that makes a difference.
             </p>
           </div>
-          
+
           <div class="about-highlights">
-            <div class="highlight-card reveal-up" style="--delay: 0.1s">
-              <div class="highlight-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
-                </svg>
-              </div>
+            <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="highlight-icon">🎓</div>
               <div class="highlight-content">
-                <h3>MCA Graduate</h3>
+                <h3>Education</h3>
                 <p>Master of Computer Applications</p>
               </div>
             </div>
-            
-            <div class="highlight-card reveal-up" style="--delay: 0.2s">
-              <div class="highlight-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                </svg>
-              </div>
+            <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="highlight-icon">📍</div>
               <div class="highlight-content">
-                <h3>Based in Srinagar</h3>
-                <p>Kashmir, India</p>
+                <h3>Location</h3>
+                <p>Srinagar, Jammu & Kashmir</p>
               </div>
             </div>
-            
-            <div class="highlight-card reveal-up" style="--delay: 0.3s">
-              <div class="highlight-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
+            <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="highlight-icon">💼</div>
               <div class="highlight-content">
-                <h3>Frontend Engineer</h3>
+                <h3>Expertise</h3>
                 <p>UI/UX & Motion Design</p>
               </div>
             </div>
-            
-            <div class="highlight-card reveal-up" style="--delay: 0.4s">
-              <div class="highlight-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                </svg>
-              </div>
+            <div class="highlight-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="highlight-icon">⚡</div>
               <div class="highlight-content">
-                <h3>Tech Focused</h3>
-                <p>React, JS, HTML5, CSS3</p>
+                <h3>Tech Stack</h3>
+                <p>React, JavaScript, HTML5, CSS3</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="about-visual reveal-right">
-          <div class="about-image-wrapper">
-            <div class="about-image-frame">
-              <div class="about-pattern"></div>
-              <div class="about-gradient-bg"></div>
-              <img src="img/profile-placeholder.jpg" alt="Shahid Gul - Frontend Developer" class="about-image" loading="lazy">
+        <div class="about-visual" data-aos="fade-left">
+          <div class="visual-wrapper">
+            <div class="profile-card">
+              <div class="profile-image">
+                <div class="image-placeholder">
+                  <div class="image-decoration"></div>
+                  <div class="image-glow"></div>
+                </div>
+              </div>
+              <div class="profile-info">
+                <div class="info-item">
+                  <span class="info-label">Focus</span>
+                  <span class="info-value">Frontend Development</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Passion</span>
+                  <span class="info-value">Creating & Learning</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Motto</span>
+                  <span class="info-value">Code with ❤️</span>
+                </div>
+              </div>
             </div>
-            <div class="experience-badge">
-              <span class="exp-number">3+</span>
-              <span class="exp-text">Years of<br>Experience</span>
+            
+            <div class="skills-preview">
+              <div class="skill-tag">JavaScript</div>
+              <div class="skill-tag">React</div>
+              <div class="skill-tag">CSS3</div>
+              <div class="skill-tag">GSAP</div>
             </div>
-          </div>
-          
-          <div class="mini-code-card">
-            <pre><code><span class="keyword">export default</span> {
-  <span class="property">passion</span>: <span class="string">"Creating"</span>,
-  <span class="property">focus</span>: <span class="string">"UI/UX"</span>,
-  <span class="property">motto</span>: <span class="string">"Code with ❤️"</span>
-}</code></pre>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WORK SECTION -->
-  <section class="section work" id="work">
-    <div class="container">
-      <header class="section-header">
-        <span class="section-label reveal-up">Portfolio</span>
-        <h2 class="section-title reveal-up" style="--delay: 0.1s">
-          Selected<br>
-          <span class="gradient-text">Projects</span>
-        </h2>
-        <p class="section-description reveal-up" style="--delay: 0.2s">
-          Showcasing my best work in web development and design
-        </p>
-      </header>
+  <!-- ===== WORK SECTION ===== -->
+  <section class="section work-section" id="work">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <span class="badge-dot"></span>
+          Portfolio
+        </span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Showcasing my best web development work</p>
+      </div>
 
-      <!-- Project Filters -->
-      <div class="project-filters reveal-up" style="--delay: 0.3s">
-        <button class="filter-btn active" data-filter="all">All Work</button>
+      <!-- Project Filter -->
+      <div class="project-filter" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web-app">Web Apps</button>
         <button class="filter-btn" data-filter="frontend">Frontend</button>
-        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-        <button class="filter-btn" data-filter="design">UI/UX</button>
+        <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
       </div>
 
       <div class="projects-grid">
         <!-- Project 1 -->
-        <article class="project-card reveal-up" data-category="fullstack" style="--delay: 0.1s">
+        <article class="project-card" data-category="web-app" data-aos="fade-up" data-aos-delay="200">
           <div class="project-image">
-            <div class="project-placeholder">
-              <span class="project-emoji">🍕</span>
-            </div>
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" aria-label="View live project">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-                  </svg>
-                </a>
-                <a href="#" class="project-link" aria-label="View source code">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                  </svg>
-                </a>
+            <div class="project-image-placeholder">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View live demo">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M10 3C5 3 1 10 1 10s4 7 9 7 9-7 9-7-4-7-9-7z" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-link" aria-label="View GitHub repository">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.165 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
             <span class="project-tag">Full Stack</span>
@@ -411,35 +460,36 @@
           <div class="project-content">
             <h3 class="project-title">Restaurant Platform</h3>
             <p class="project-description">
-              Full-stack restaurant ordering system with real-time order tracking and payment integration.
+              Full-stack restaurant ordering system built with React, Node.js, and MongoDB. 
+              Features real-time order tracking and payment integration.
             </p>
             <div class="project-tech">
               <span class="tech-tag">React</span>
               <span class="tech-tag">Node.js</span>
               <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Socket.io</span>
             </div>
           </div>
         </article>
 
         <!-- Project 2 -->
-        <article class="project-card reveal-up" data-category="frontend" style="--delay: 0.2s">
+        <article class="project-card" data-category="frontend" data-aos="fade-up" data-aos-delay="300">
           <div class="project-image">
-            <div class="project-placeholder">
-              <span class="project-emoji">🎨</span>
-            </div>
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" aria-label="View live project">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-                  </svg>
-                </a>
-                <a href="#" class="project-link" aria-label="View source code">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                  </svg>
-                </a>
+            <div class="project-image-placeholder">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View live demo">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M10 3C5 3 1 10 1 10s4 7 9 7 9-7 9-7-4-7-9-7z" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-link" aria-label="View GitHub repository">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.165 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
             <span class="project-tag">Frontend</span>
@@ -447,35 +497,36 @@
           <div class="project-content">
             <h3 class="project-title">Portfolio Builder</h3>
             <p class="project-description">
-              Animated portfolio creation system with drag-and-drop interface and GSAP animations.
+              Animated portfolio creation system with drag-and-drop interface, powered by 
+              GSAP animations and modern React architecture.
             </p>
             <div class="project-tech">
               <span class="tech-tag">React</span>
               <span class="tech-tag">GSAP</span>
               <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Framer Motion</span>
             </div>
           </div>
         </article>
 
         <!-- Project 3 -->
-        <article class="project-card reveal-up" data-category="design" style="--delay: 0.3s">
+        <article class="project-card" data-category="ui-ux" data-aos="fade-up" data-aos-delay="400">
           <div class="project-image">
-            <div class="project-placeholder">
-              <span class="project-emoji">📊</span>
-            </div>
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" aria-label="View live project">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-                  </svg>
-                </a>
-                <a href="#" class="project-link" aria-label="View source code">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                  </svg>
-                </a>
+            <div class="project-image-placeholder">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View live demo">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M10 3C5 3 1 10 1 10s4 7 9 7 9-7 9-7-4-7-9-7z" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-link" aria-label="View GitHub repository">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.165 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
             <span class="project-tag">UI/UX</span>
@@ -483,461 +534,415 @@
           <div class="project-content">
             <h3 class="project-title">SaaS Dashboard</h3>
             <p class="project-description">
-              Modern SaaS dashboard with data visualization, analytics charts, and responsive design.
+              Modern SaaS dashboard interface with data visualization, analytics charts, 
+              and responsive design for seamless user experience.
             </p>
             <div class="project-tech">
               <span class="tech-tag">JavaScript</span>
               <span class="tech-tag">Chart.js</span>
               <span class="tech-tag">CSS3</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 4 -->
-        <article class="project-card reveal-up" data-category="frontend" style="--delay: 0.4s">
-          <div class="project-image">
-            <div class="project-placeholder">
-              <span class="project-emoji">🛒</span>
-            </div>
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" aria-label="View live project">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                    <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-                  </svg>
-                </a>
-                <a href="#" class="project-link" aria-label="View source code">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <span class="project-tag">E-commerce</span>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">E-Commerce Store</h3>
-            <p class="project-description">
-              Modern e-commerce platform with cart functionality, payment gateway, and admin panel.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Redux</span>
-              <span class="tech-tag">Stripe</span>
+              <span class="tech-tag">D3.js</span>
             </div>
           </div>
         </article>
       </div>
 
-      <div class="view-all-projects reveal-up">
-        <a href="https://github.com/Shahidsid007" target="_blank" rel="noopener noreferrer" class="btn btn-outline magnetic">
+      <div class="view-more" data-aos="fade-up" data-aos-delay="500">
+        <a href="https://github.com/Shahidsid007" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
           <span class="btn-text">View All Projects</span>
-          <span class="btn-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10h12m-6-6l6 6-6 6" stroke="currentColor" stroke-width="2"/>
+          </svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <header class="section-header">
-        <span class="section-label reveal-up">Tech Stack</span>
-        <h2 class="section-title reveal-up" style="--delay: 0.1s">
-          Skills &<br>
-          <span class="gradient-text">Technologies</span>
-        </h2>
-        <p class="section-description reveal-up" style="--delay: 0.2s">
-          Tools and technologies I use to bring products to life
-        </p>
-      </header>
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <span class="badge-dot"></span>
+          Technologies
+        </span>
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="section-subtitle">Tools and technologies I work with daily</p>
+      </div>
 
       <div class="skills-grid">
         <!-- JavaScript -->
-        <div class="skill-card reveal-up" style="--delay: 0.1s">
-          <div class="skill-icon">
-            <img src="img/js.png" alt="JavaScript" width="48" height="48" loading="lazy">
-          </div>
-          <h3 class="skill-name">JavaScript</h3>
-          <p class="skill-level">ES6+, Modern JS</p>
-          <div class="skill-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" data-width="90"></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <img src="img/js.png" alt="JavaScript" width="40" height="40" loading="lazy">
             </div>
-            <span class="progress-value">90%</span>
-          </div>
-        </div>
-
-        <!-- HTML5 -->
-        <div class="skill-card reveal-up" style="--delay: 0.15s">
-          <div class="skill-icon">
-            <img src="img/html.png" alt="HTML5" width="48" height="48" loading="lazy">
-          </div>
-          <h3 class="skill-name">HTML5</h3>
-          <p class="skill-level">Semantic Markup</p>
-          <div class="skill-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" data-width="95"></div>
+            <div class="skill-info">
+              <h3 class="skill-name">JavaScript</h3>
+              <p class="skill-level">Advanced</p>
             </div>
-            <span class="progress-value">95%</span>
           </div>
-        </div>
-
-        <!-- CSS3 -->
-        <div class="skill-card reveal-up" style="--delay: 0.2s">
-          <div class="skill-icon">
-            <img src="img/css-3.png" alt="CSS3" width="48" height="48" loading="lazy">
-          </div>
-          <h3 class="skill-name">CSS3</h3>
-          <p class="skill-level">Animations & Grid</p>
-          <div class="skill-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" data-width="90"></div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90">
+              <span class="skill-percent">90%</span>
             </div>
-            <span class="progress-value">90%</span>
           </div>
+          <p class="skill-description">ES6+, Async/Await, Modern JS</p>
         </div>
 
         <!-- React -->
-        <div class="skill-card reveal-up" style="--delay: 0.25s">
-          <div class="skill-icon">
-            <img src="img/atom.png" alt="React" width="48" height="48" loading="lazy">
-          </div>
-          <h3 class="skill-name">React</h3>
-          <p class="skill-level">Hooks & Components</p>
-          <div class="skill-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" data-width="85"></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <img src="img/atom.png" alt="React" width="40" height="40" loading="lazy">
             </div>
-            <span class="progress-value">85%</span>
+            <div class="skill-info">
+              <h3 class="skill-name">React</h3>
+              <p class="skill-level">Advanced</p>
+            </div>
           </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85">
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+          <p class="skill-description">Hooks, Context API, Redux</p>
         </div>
 
-        <!-- Tailwind CSS -->
-        <div class="skill-card reveal-up" style="--delay: 0.3s">
-          <div class="skill-icon">
-            <img src="img/tailwind.png" alt="Tailwind CSS" width="48" height="48" loading="lazy">
-          </div>
-          <h3 class="skill-name">Tailwind CSS</h3>
-          <p class="skill-level">Utility-First</p>
-          <div class="skill-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" data-width="80"></div>
+        <!-- HTML5 -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <img src="img/html.png" alt="HTML5" width="40" height="40" loading="lazy">
             </div>
-            <span class="progress-value">80%</span>
+            <div class="skill-info">
+              <h3 class="skill-name">HTML5</h3>
+              <p class="skill-level">Expert</p>
+            </div>
           </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="95">
+              <span class="skill-percent">95%</span>
+            </div>
+          </div>
+          <p class="skill-description">Semantic HTML, Accessibility</p>
         </div>
 
-        <!-- Bootstrap -->
-        <div class="skill-card reveal-up" style="--delay: 0.35s">
-          <div class="skill-icon">
-            <img src="img/bootstrap.png" alt="Bootstrap" width="48" height="48" loading="lazy">
-          </div>
-          <h3 class="skill-name">Bootstrap</h3>
-          <p class="skill-level">Responsive Design</p>
-          <div class="skill-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" data-width="75"></div>
+        <!-- CSS3 -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <img src="img/css-3.png" alt="CSS3" width="40" height="40" loading="lazy">
             </div>
-            <span class="progress-value">75%</span>
+            <div class="skill-info">
+              <h3 class="skill-name">CSS3</h3>
+              <p class="skill-level">Expert</p>
+            </div>
           </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90">
+              <span class="skill-percent">90%</span>
+            </div>
+          </div>
+          <p class="skill-description">Grid, Flexbox, Animations</p>
+        </div>
+
+        <!-- Tailwind -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <img src="img/tailwind.png" alt="Tailwind CSS" width="40" height="40" loading="lazy">
+            </div>
+            <div class="skill-info">
+              <h3 class="skill-name">Tailwind CSS</h3>
+              <p class="skill-level">Advanced</p>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80">
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+          <p class="skill-description">Utility-First Styling</p>
         </div>
 
         <!-- SASS -->
-        <div class="skill-card reveal-up" style="--delay: 0.4s">
-          <div class="skill-icon">
-            <img src="img/sass.png" alt="SASS" width="48" height="48" loading="lazy">
-          </div>
-          <h3 class="skill-name">SASS</h3>
-          <p class="skill-level">CSS Preprocessor</p>
-          <div class="skill-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" data-width="70"></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <img src="img/sass.png" alt="SASS" width="40" height="40" loading="lazy">
             </div>
-            <span class="progress-value">70%</span>
+            <div class="skill-info">
+              <h3 class="skill-name">SASS</h3>
+              <p class="skill-level">Intermediate</p>
+            </div>
           </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70">
+              <span class="skill-percent">70%</span>
+            </div>
+          </div>
+          <p class="skill-description">Variables, Mixins, Nesting</p>
         </div>
 
         <!-- Git -->
-        <div class="skill-card reveal-up" style="--delay: 0.45s">
-          <div class="skill-icon">
-            <img src="img/social.png" alt="Git" width="48" height="48" loading="lazy">
-          </div>
-          <h3 class="skill-name">Git</h3>
-          <p class="skill-level">Version Control</p>
-          <div class="skill-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" data-width="80"></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <img src="img/social.png" alt="Git" width="40" height="40" loading="lazy">
             </div>
-            <span class="progress-value">80%</span>
+            <div class="skill-info">
+              <h3 class="skill-name">Git</h3>
+              <p class="skill-level">Advanced</p>
+            </div>
           </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80">
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+          <p class="skill-description">Version Control, Branching</p>
         </div>
 
         <!-- GitHub -->
-        <div class="skill-card reveal-up" style="--delay: 0.5s">
-          <div class="skill-icon">
-            <img src="img/github.png" alt="GitHub" width="48" height="48" loading="lazy">
-          </div>
-          <h3 class="skill-name">GitHub</h3>
-          <p class="skill-level">Code Repository</p>
-          <div class="skill-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" data-width="85"></div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="450">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <img src="img/github.png" alt="GitHub" width="40" height="40" loading="lazy">
             </div>
-            <span class="progress-value">85%</span>
+            <div class="skill-info">
+              <h3 class="skill-name">GitHub</h3>
+              <p class="skill-level">Advanced</p>
+            </div>
           </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85">
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+          <p class="skill-description">Collaboration, CI/CD</p>
         </div>
-      </div>
 
-      <!-- Additional Skills -->
-      <div class="additional-skills reveal-up">
-        <h3>Also familiar with</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">Next.js</span>
-          <span class="skill-tag">GSAP</span>
-          <span class="skill-tag">Framer Motion</span>
-          <span class="skill-tag">Figma</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">Responsive Design</span>
-          <span class="skill-tag">Web Performance</span>
-          <span class="skill-tag">SEO</span>
-          <span class="skill-tag">Accessibility</span>
+        <!-- Bootstrap -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <img src="img/bootstrap.png" alt="Bootstrap" width="40" height="40" loading="lazy">
+            </div>
+            <div class="skill-info">
+              <h3 class="skill-name">Bootstrap</h3>
+              <p class="skill-level">Advanced</p>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75">
+              <span class="skill-percent">75%</span>
+            </div>
+          </div>
+          <p class="skill-description">Responsive Components</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <header class="section-header">
-        <span class="section-label reveal-up">Contact</span>
-        <h2 class="section-title reveal-up" style="--delay: 0.1s">
-          Let's Work<br>
-          <span class="gradient-text">Together</span>
-        </h2>
-        <p class="section-description reveal-up" style="--delay: 0.2s">
-          Have a project in mind? Let's create something amazing
-        </p>
-      </header>
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">
+          <span class="badge-dot"></span>
+          Let's Connect
+        </span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Let's build something amazing together</p>
+      </div>
 
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-card reveal-left" style="--delay: 0.1s">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
+      <div class="contact-content">
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-right">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
             </div>
-            <div class="contact-details">
+            <div class="info-content">
               <h3>Email</h3>
               <a href="mailto:codewithsid1998@gmail.com">codewithsid1998@gmail.com</a>
             </div>
           </div>
 
-          <div class="contact-card reveal-left" style="--delay: 0.2s">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
               </svg>
             </div>
-            <div class="contact-details">
+            <div class="info-content">
               <h3>Location</h3>
               <p>Natipora, Srinagar<br>Jammu & Kashmir, India</p>
             </div>
           </div>
 
-          <div class="contact-card reveal-left" style="--delay: 0.3s">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6M12 3v12m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
             </div>
-            <div class="contact-details">
+            <div class="info-content">
               <h3>Available For</h3>
               <p>Freelance Projects<br>Full-time Opportunities</p>
             </div>
           </div>
 
-          <div class="social-links reveal-left" style="--delay: 0.4s">
-            <h3>Connect with me</h3>
-            <div class="social-icons">
-              <a href="https://github.com/Shahidsid007" target="_blank" rel="noopener noreferrer" class="social-link magnetic" aria-label="GitHub">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                </svg>
-              </a>
-              <a href="https://linkedin.com/in/shahid-gul-42a1691aa" target="_blank" rel="noopener noreferrer" class="social-link magnetic" aria-label="LinkedIn">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                  <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
-                </svg>
-              </a>
-              <a href="https://x.com/Imshahidsid" target="_blank" rel="noopener noreferrer" class="social-link magnetic" aria-label="Twitter">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                </svg>
-              </a>
-              <a href="https://instagram.com/i.mshahid___sid" target="_blank" rel="noopener noreferrer" class="social-link magnetic" aria-label="Instagram">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                </svg>
-              </a>
-            </div>
+          <div class="social-links">
+            <a href="https://github.com/Shahidsid007" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <img src="img/github.png" alt="GitHub" width="24" height="24" loading="lazy">
+            </a>
+            <a href="https://linkedin.com/in/shahid-gul-42a1691aa" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <img src="img/linkedin.png" alt="LinkedIn" width="24" height="24" loading="lazy">
+            </a>
+            <a href="https://twitter.com/Imshahidsid" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+              <img src="img/twitter.png" alt="Twitter" width="24" height="24" loading="lazy">
+            </a>
+            <a href="https://instagram.com/i.mshahid___sid" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <img src="img/instagram.png" alt="Instagram" width="24" height="24" loading="lazy">
+            </a>
           </div>
         </div>
 
-        <form class="contact-form reveal-right" id="contactForm">
-          <div class="form-group">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
-            <span class="form-line"></span>
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm" data-aos="fade-left">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email *</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+              <span class="form-error"></span>
+            </div>
           </div>
-
+          
           <div class="form-group">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
-            <span class="form-line"></span>
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+            <span class="form-error"></span>
           </div>
-
+          
           <div class="form-group">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry" required>
-            <span class="form-line"></span>
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+            <span class="form-error"></span>
           </div>
-
-          <div class="form-group">
-            <label for="message" class="form-label">Message</label>
-            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." required></textarea>
-            <span class="form-line"></span>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-full magnetic">
+          
+          <button type="submit" class="btn btn-primary btn-submit">
             <span class="btn-text">Send Message</span>
-            <span class="btn-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-              </svg>
-            </span>
-            <span class="btn-loading">
-              <svg class="spinner" width="20" height="20" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="30 70"/>
-              </svg>
-            </span>
+            <span class="btn-loader"></span>
+            <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M18 2L9 11m9-9l-6 16-3-7-7-3 16-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
           </button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer" role="contentinfo">
-    <div class="container">
+    <div class="footer-container">
       <div class="footer-content">
         <div class="footer-brand">
           <a href="#home" class="logo">
             <span class="logo-icon">⚡</span>
-            <span class="logo-text">Shahid<span class="logo-accent">.dev</span></span>
+            <span class="logo-text">Shahid<span class="dot">.</span>dev</span>
           </a>
-          <p class="footer-tagline">Crafting beautiful digital experiences</p>
-        </div>
-
-        <nav class="footer-nav">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="footer-social">
-          <h4>Connect</h4>
-          <div class="social-icons">
+          <p class="footer-tagline">Crafting beautiful web experiences with passion and precision.</p>
+          <div class="footer-social">
             <a href="https://github.com/Shahidsid007" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-              </svg>
+              <img src="img/github.png" alt="GitHub" width="24" height="24" loading="lazy">
             </a>
             <a href="https://linkedin.com/in/shahid-gul-42a1691aa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
-              </svg>
+              <img src="img/linkedin.png" alt="LinkedIn" width="24" height="24" loading="lazy">
             </a>
-            <a href="https://x.com/Imshahidsid" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-              </svg>
+            <a href="https://facebook.com/ishahid.1998" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <img src="img/facebook.png" alt="Facebook" width="24" height="24" loading="lazy">
+            </a>
+            <a href="https://instagram.com/i.mshahid___sid" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="img/instagram.png" alt="Instagram" width="24" height="24" loading="lazy">
+            </a>
+            <a href="https://stackoverflow.com/users/14758146" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow">
+              <img src="img/stackoverflow.png" alt="Stack Overflow" width="24" height="24" loading="lazy">
             </a>
           </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer-links">
+          <h3>Services</h3>
+          <nav>
+            <a href="#">Web Development</a>
+            <a href="#">UI/UX Design</a>
+            <a href="#">Frontend Development</a>
+            <a href="#">React Development</a>
+            <a href="#">Consulting</a>
+          </nav>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to get latest updates and insights</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" aria-label="Subscribe">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10h12m-6-6l6 6-6 6" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Shahid Gul · Built with ❤️ in Srinagar</p>
-        <button class="back-to-top magnetic" id="backToTop" aria-label="Back to top">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 15l-6-6-6 6"/>
-          </svg>
-        </button>
+        <p>&copy; 2025 Shahid Gul. All rights reserved. Built with ❤️ in Srinagar, India</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- MOBILE NAVIGATION -->
-  <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
-    <a href="#home" class="mobile-nav-item" data-section="home">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-      </svg>
-      <span>Home</span>
-    </a>
-    <a href="#about" class="mobile-nav-item" data-section="about">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-      </svg>
-      <span>About</span>
-    </a>
-    <a href="#work" class="mobile-nav-item" data-section="work">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-      </svg>
-      <span>Work</span>
-    </a>
-    <a href="#skills" class="mobile-nav-item" data-section="skills">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-      </svg>
-      <span>Skills</span>
-    </a>
-    <a href="#contact" class="mobile-nav-item" data-section="contact">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-        <polyline points="22,6 12,13 2,6"/>
-      </svg>
-      <span>Contact</span>
-    </a>
-    <div class="mobile-nav-indicator"></div>
-  </nav>
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M10 16V4m0 0L4 10m6-6l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
 
-  <!-- SCRIPTS -->
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <div class="toast-icon"></div>
+    <div class="toast-message"></div>
+  </div>
+
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>
